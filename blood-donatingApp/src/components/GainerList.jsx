@@ -1,4 +1,3 @@
-// src/components/GainerList.jsx
 import { useState, useEffect } from 'react';
 import { getAllGainers } from '../utils/fakeBackend';
 import toast from 'react-hot-toast';
@@ -51,8 +50,7 @@ export default function GainerList() {
             + Post New Request
           </button>
         </div>
-
-        {/* Filters */}
+        
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
           <input
             type="text"
@@ -85,7 +83,6 @@ export default function GainerList() {
           </button>
         </div>
 
-        {/* Gainer Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.length > 0 ? (
             filtered.map((gainer) => (
