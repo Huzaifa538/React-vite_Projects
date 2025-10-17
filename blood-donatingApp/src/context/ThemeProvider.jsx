@@ -1,5 +1,3 @@
-// src/components/ThemeProvider.jsx
-
 import { useState, useEffect } from 'react';
 import { ThemeContext } from './ThemeContext';
 
@@ -19,7 +17,6 @@ export const ThemeProvider = ({ children }) => {
 
   const toggleTheme = () => setDarkMode(!darkMode);
 
-  // ✅ Explicitly use ThemeContext in JSX
   const ThemeProviderComponent = ThemeContext.Provider;
 
   return (
